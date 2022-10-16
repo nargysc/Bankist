@@ -74,3 +74,8 @@ document.querySelector('.btn--close--cookie');
 document.addEventListener('click', function(){
   message.parentElement.removeChild(message);
 })
+
+//Styles for cookie 
+
+message.style.backgroundColor = '#37383d';
+message.style.width = '120';
