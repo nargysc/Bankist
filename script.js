@@ -120,4 +120,8 @@ logo.classList.remove('c', 'j');
 logo.classList.toggle('c');
 logo.classList.contains('c');
 
+/*
 logo.className = 'nargys';
+*/
+
+
