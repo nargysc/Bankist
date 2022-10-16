@@ -44,5 +44,5 @@ console.log(allSections);
 
 
 document.getElementById('section--1');
-const allButtons = document.getElementByTagName('button');
+const allButtons = document.getElementsByTagName('button');
 console.log(allButtons);
