@@ -59,8 +59,8 @@ message.classList.add('cookie-message');
 message.innerHTML = 'We use cookies for imroved functionality and analytics. <button class="btn btn--close-cookie">Got it</button>';
 
 //header.prepend(message);
-header.prepend(message);
-//header.append(message);
+//header.prepend(message);
+header.append(message);
 
 //header.append(message.cloneNode(true));
 
@@ -78,4 +78,14 @@ document.addEventListener('click', function(){
 //Styles for cookie 
 
 message.style.backgroundColor = '#37383d';
-message.style.width = '120';
+message.style.width = '100';
+
+console.log(message.style.height);
+console.log(message.style.backgroundColor);
+
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
+
+message.style.height = Number.parseFloat(getComputedStyle(message).height,10) + 30 + 'px';
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
