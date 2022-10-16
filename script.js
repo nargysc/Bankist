@@ -62,4 +62,15 @@ message.innerHTML = 'We use cookies for imroved functionality and analytics. <bu
 header.prepend(message);
 //header.append(message);
 
-header.append(message.cloneNode(true));
+//header.append(message.cloneNode(true));
+
+header.before(message);
+//header.after(message);
+
+
+/*Delete Elements*/
+
+document.querySelector('.btn--close--cookie');
+document.addEventListener('click', function(){
+  message.parentElement.removeChild(message);
+})
