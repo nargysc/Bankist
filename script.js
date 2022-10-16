@@ -38,7 +38,7 @@ console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
 
-document.querySelector('.header');
+const header = document.querySelector('.header');
 const allSections = document.querySelectorAll('.section');
 console.log(allSections);
 
@@ -46,3 +46,20 @@ console.log(allSections);
 document.getElementById('section--1');
 const allButtons = document.getElementsByTagName('button');
 console.log(allButtons);
+
+console.log(document.getElementsByClassName('btn'));
+
+//creating and inserting eleements
+
+/*Inserting HTML element*/
+
+const message = document.createElement('div');
+message.classList.add('cookie-message');
+
+message.innerHTML = 'We use cookies for imroved functionality and analytics. <button class="btn btn--close-cookie">Got it</button>';
+
+//header.prepend(message);
+header.prepend(message);
+//header.append(message);
+
+header.append(message.cloneNode(true));
