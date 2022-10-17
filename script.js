@@ -124,4 +124,14 @@ logo.classList.contains('c');
 logo.className = 'nargys';
 */
 
+const btnScrollTo  = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector("#section--1");
 
+
+btnScrollTo.addEventListener('click', function(e){
+const s1soords = section1.getBoundingClientRect();
+console.log(s1soords);
+console.log(e.target.getBoundingClientRect());
+
+console.log('Current scroll (X/Y)', window.pageXOffset, pageYOffset);
+})
