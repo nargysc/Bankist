@@ -133,5 +133,5 @@ const s1soords = section1.getBoundingClientRect();
 console.log(s1soords);
 console.log(e.target.getBoundingClientRect());
 
-console.log('Current scroll (X/Y)', window.pageXOffset, pageYOffset);
-})
+console.log('Current scroll (X/Y)', window.pageXOffset, window.pageYOffset);
+});
