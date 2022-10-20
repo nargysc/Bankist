@@ -138,5 +138,5 @@ console.log('Current scroll (X/Y)', window.pageXOffset, window.pageYOffset);
 
 const h1 = document.querySelector('h1');
 h1.addEventListener('mouseenter', function (e) {
-  alert('addEventListener: Great you are reading')
+  alert('Great you are reading')
 });
